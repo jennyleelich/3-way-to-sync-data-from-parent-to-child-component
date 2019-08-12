@@ -7,18 +7,24 @@ import { AppComponent } from './app.component';
 import { BloggerComponent } from './blogger/blogger.component';
 import { PostComponent } from './post/post.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     BloggerComponent,
-    PostComponent
+    PostComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
