@@ -11,6 +11,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ExampleDirective } from './example.directive';
+import { StructureComponent } from './structure/structure.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { ExampleDirective } from './example.directive';
     PostComponent,
     ParentComponent,
     ChildComponent,
-    ExampleDirective
+    ExampleDirective,
+    StructureComponent
   ],
   imports: [
     BrowserModule,

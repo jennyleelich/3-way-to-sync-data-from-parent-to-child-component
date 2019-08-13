@@ -1,0 +1,11 @@
+<p>this is structure directive demo</p>
+<ul>
+    <ng-container *ngFor='let item of items, index as i'>
+        <ng-container *ngIf='item.flag === true;else other'>
+            <li>flag true item name is : {{item.name}}</li>
+        </ng-container>
+        <ng-template #other>
+            <li>flag false name is : {{item.name}}</li>
+        </ng-template>
+    </ng-container>
+</ul>
